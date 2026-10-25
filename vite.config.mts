@@ -41,7 +41,8 @@ function devApi(base: string): Plugin {
 const base = process.env.VITE_BASE || '/'
 
 export default defineConfig({
-  base,
+  base: '/podrida/',
+  build: { outDir: 'dist/podrida' },
   plugins: [react(), devApi(base)],
   server: { host: '0.0.0.0', port: 5173 },
   test: { include: ['tests/**/*.test.{ts,tsx}'] },
