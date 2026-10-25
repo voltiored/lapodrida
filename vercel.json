@@ -1,0 +1,6 @@
+{
+  "regions": ["fra1"],
+  "functions": { "api/game.ts": { "maxDuration": 10 } },
+  "redirects": [{ "source": "/", "destination": "/podrida/" }],
+  "rewrites": [{ "source": "/podrida/api/game", "destination": "/api/game" }]
+}

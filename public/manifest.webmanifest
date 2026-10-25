@@ -1,0 +1,11 @@
+{
+  "name": "La Podrida",
+  "short_name": "Podrida",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2f1eb",
+  "theme_color": "#24543f",
+  "lang": "es",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
