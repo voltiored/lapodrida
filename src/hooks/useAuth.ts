@@ -37,7 +37,12 @@ export function useAuth() {
   }, [])
 
   const signInWithGoogle = useCallback(async () => {
-    const { error: err } = await supabase.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: window.location.origin } })
+    const { error: err } = await supabase.auth.signInWithOAuth({
+  provider: 'google',
+  options: {
+    redirectTo: window.location.href,
+  },
+})
     if (err) setError(err.message)
   }, [])
   const signOut = useCallback(async () => { await supabase.auth.signOut() }, [])
